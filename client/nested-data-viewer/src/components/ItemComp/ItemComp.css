@@ -1,0 +1,72 @@
+.item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .item h3 {
+    font-size: 1.25rem;
+    color: #007BFF;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .header-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc; /* Thin gray separator */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    position: relative; /* Make sure tooltip can be positioned relative to the header */
+  }
+  
+  .header-item h3 {
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .item-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .eye-icon {
+    font-size: 1.5rem;
+    color: #007BFF;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative; /* Make sure tooltip is positioned relative to the icon */
+    transition: color 0.3s ease;
+  }
+  
+  .eye-icon:hover {
+    color: #0056b3;
+  }
+  
+  .tooltip {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    position: absolute;
+    left: 100%; /* Position to the right of the icon */
+    margin-left: 10px; /* Space between icon and tooltip */
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    z-index: 10;
+  }
+  
+  .item-link:hover .tooltip {
+    display: inline-block;
+  }
+  
+  .subitems {
+    margin-top: 10px;
+  }
+  
